@@ -1,0 +1,485 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+  
+}
+
+#main{
+    margin-top:15px;
+    width: 100%;
+    height: 70vh;
+    background-color:#CDE8E5;
+    text-align: center;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color:	#4A4A4A;
+   
+
+}
+
+h3{
+  color:#4A4A4A;
+}
+p{
+    font-size: 15px;
+    color: #4D869C;
+}
+
+a{
+  text-decoration: none;
+}
+
+
+.btn{
+   margin-top: 10px;
+   border-radius: 25px;
+   border: none;
+   font-size: 15px;
+   font-weight: bold;
+   width: 80px;
+   height: 40px;
+   background-color: #EEF7FF; 
+   color:  #4D869C;  
+ 
+}
+
+#resumebtn,#submitbutton{
+  background-color:  #4D869C;
+  color:#EEF7FF;
+  
+}
+
+#githubBtn,#liveBtn{
+  width:70px;
+  height:30px;
+  font-size: 13px;
+  padding: 3px;
+  
+ 
+ 
+}
+
+
+.btn:hover{
+    box-shadow: 0 5px #ADB2D4;
+    
+}
+
+.btn:active{
+    
+    box-shadow: 0 5px #ADB2D4;
+    transform:translateY(4px);
+    font-size:18px;
+    width: 90px;
+}
+
+
+
+
+#mainsecond{
+    border-radius: 25px;
+    margin-top:35px;
+    width: 100%;
+    height: 70vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap:20px;
+
+}
+
+
+.inner{
+    text-align: center;
+    font-size: 35px;
+    border-radius: 25px;
+}
+
+#acad{
+    background-color:#EEF7FF;
+}
+
+#projects{
+    background-color:#7AB2B2;
+   
+}
+.cg{
+  font-weight: bold;
+}
+
+#hobbies{
+    background-color: #4D869C;
+   
+}
+
+#hobbies li{
+    list-style: none;
+    
+}
+
+.holder{
+    width: auto;
+    height: 50%;
+    margin-bottom: 20px;
+}
+
+.mainthird{
+    margin-top: 35px;
+    width: 100%;
+    height: 55vh;
+    text-align:left;
+    font-size: 35px;
+}
+
+.mainthird h3{
+    padding: 25px;
+    margin-top:15px;
+    
+}
+
+
+
+#thecathartic{
+    background-color: #ADB2D4;
+    border-radius: 25px;
+}
+
+.catharticcontent{
+    opacity: 0;
+    transition: opacity 2s ease-in;
+    font-size: 18px;
+    color:#EEF7FF;
+  
+}
+.catharticcontent a{
+  color:#4A4A4A;
+}
+
+.catharticcontent p{
+  margin: 20px;
+  letter-spacing: 1.5px;
+  max-width: 100%;
+  color:#EEF7FF;
+  font-weight: bold;
+}
+
+#thecathartic:hover .catharticcontent{
+   opacity:1;
+}
+
+#insta{
+    width: 25px;
+    height: 25px;
+}
+#instaflex{
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    justify-content: right;
+     color:#4A4A4A;;
+}
+
+img{
+    width:50%;
+    height: 50%;
+    background-size: cover;
+    border-radius: 7px;
+}
+
+.cardcontainer{
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+
+.flipcard{
+    width:150px;
+    height: 100px;
+    perspective: 1000px;
+}
+
+.flipcard:hover .front{
+    transform: rotateY(180deg);
+}
+.flipcard:hover .back{
+    transform: rotateY(0deg);
+}
+
+.front,.back{
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    backface-visibility: hidden;
+}
+
+.front{
+    transform: rotateY(0deg);
+    font-weight: bold;
+}
+
+.back{
+   
+    transform: rotateY(180deg);
+}
+
+#mainfourth{
+    background-color: #C7D9DD;
+    width:100%;
+    height: 70vh;
+    border-radius: 25px;
+    font-size: 30px;
+    text-align: center;  
+    
+}
+
+#mainfourth h3{
+    padding: 25px;
+}
+
+
+.formclass{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.formgroup{
+    display: flex;
+    
+
+}
+
+
+
+.formclass input,textarea{
+    width:350px;
+    height: 30px;
+    border-radius: 25px;
+    padding: 10px;
+    font-size: 15px;
+    margin: 15px;
+    border: none;
+}
+label{
+    font-size: 25px;
+    padding-top: 20px;
+    color: #4D869C;
+    font-weight: bold;
+}
+
+textarea{
+    height: 80px;
+    
+
+}
+
+
+
+
+
+@media screen and (max-width: 600px) {
+    #main {
+      flex-direction: column;
+      height: auto;
+      font-size: 16px;
+      padding: 20px;
+    }
+  
+    h1 {
+      font-size: 22px;
+    }
+    h3{
+        font-size:20px;
+    }
+  
+    .btn {
+      width: 100px;
+      height: 35px;
+      font-size: 14px;
+    }
+  
+    #mainsecond {
+      grid-template-columns: 1fr;
+      height: auto;
+      padding: 10px;
+    }
+  
+    .inner {
+      font-size: 20px;
+      padding: 10px;
+    }
+  
+    
+    .flipcard {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 12px;
+        margin-bottom: 15px;
+        height: auto;
+      }
+    
+      .flipcard .front,
+      .flipcard .back {
+        display: block;
+        width: 100%;
+        font-size: 10px;
+      }
+  
+    .hobbyist img,
+    #projectimage,
+    #image {
+      max-width: 100%;
+      height: auto;
+    }
+  
+    .mainthird {
+      width:100%;
+      height: auto;
+      font-size: 20px;
+    }
+  
+    .catharticcontent p {
+      font-size: 10px;
+      padding: 0 15px;
+    }
+  
+    #mainfourth {
+      padding: 20px;
+    }
+  
+    .formclass {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .formgroup input,
+    .formgroup textarea {
+      width: 100%;
+    }
+    label{
+      font-size: 20px;
+    }
+    #instaflex {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+  }
+
+
+
+
+
+
+@media screen and (min-width: 601px) and (max-width: 992px) {
+   
+
+  h1{
+    font-size: 20px;
+    }
+   h3{
+    font-size: 23px;
+   }
+
+    #main{
+      height: auto;
+      padding: 20px;
+      font-size: 18px;
+    }
+
+    .btn{
+        font-size: 15px;
+    }
+   
+    
+    #mainsecond {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      height: auto;
+      padding: 20px;
+    }
+  
+    .inner {
+      font-size: 20px;
+      padding:10px;
+    }
+
+    .front p{
+        font-size: 10px;
+    }
+
+    .back p{
+        font-size: 10px;
+    }
+  
+    .flipcard {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 12px;
+        margin-bottom: 15px;
+      }
+    
+      .flipcard .front,
+      .flipcard .back {
+        display: block;
+        width: 100%;
+        font-size: 14px;
+      }
+    
+      .flipcard .back {
+        margin-top: 8px;
+      }
+  
+    .mainthird {
+      font-size: 20px;
+      height: auto;
+      padding: 20px;
+     
+    }
+    
+    .formgroup input,
+    .formgroup textarea {
+      width:100%;
+    }
+
+    #mainfourth {
+       height: auto;
+      }
+
+    label{
+        font-size: 18px;
+
+      }
+
+      #submitbutton{
+        margin-bottom: 5px;
+      }
+  }
+
+
+
+@media screen and (min-width: 993px) {
+
+    #main {
+        height: 70vh;
+      }
+    
+      .formgroup input,
+      .formgroup textarea {
+        width: 100%;
+      }
+      
+
+    #mainfourth{
+        height: 90vh;
+        
+    }
+
+}
+

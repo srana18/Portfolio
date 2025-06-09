@@ -50,6 +50,8 @@ var images = [
     }
     document.getElementById('image').src = images[i];
   }
+
+  setInterval(slidernext, 3000);
   
 var projectindex=0;
 const projects=[
@@ -93,3 +95,31 @@ function projectnext() {
   document.getElementById('githubBtn').href = projects[projectindex].github;
   document.getElementById('liveBtn').href= projects[projectindex].live;
 }
+
+setInterval(projectnext, 3000);
+
+
+var x=0;
+var imagesforacademic = [
+    "public/tiet.jpg",
+    "public/rla.jpg"
+  ];
+
+   function acadprev() {
+    if (x > 0) {
+      x--;
+    } else {
+      x= imagesforacademic.length - 1; 
+    }
+    document.getElementById('imageofcollege').src = imagesforacademic[x];
+  }
+  
+  function acadnext() {
+    if (x < imagesforacademic.length - 1) {
+      x++;
+    } else {
+      x = 0; 
+    }
+    document.getElementById('imageofcollege').src = imagesforacademic[x];
+  }
+ setInterval(acadnext, 3000);
